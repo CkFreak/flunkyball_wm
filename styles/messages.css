@@ -1,0 +1,180 @@
+header {
+    background-color: #fc8000;
+}
+
+.bg-light {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fc8000 !important;
+}
+
+body {
+    background-color: #7cfc00;
+    color: black;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #7cfc00;
+    box-shadow: 0 -1px black;
+    text-align: center;
+}
+
+footer > p {
+    flex: 1;
+    justify-content: center;
+    padding: 2em;
+
+
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.container-fluid {
+    margin: 55px auto;
+}
+
+.message {
+    border: 1px solid #007cfc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.message::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.time {
+    float: right;
+    color: white;
+}
+
+.message-scroll {
+    z-index: -1;
+    position: fixed;
+    top: 65px;
+    height: 73%;
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#flunk {
+    font-family: Impact, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#text {
+    margin: 0 auto;
+    right: 240px;
+    position: fixed;
+    top: 85%;
+    display: block;
+    width: 80%;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 25px;
+}
+
+
+.no-overflow {
+    overflow: hidden;
+}
+
+#input {
+    position: fixed;
+    top: 85%;
+    width: 90%;
+}
+
+.send-button {
+    position: fixed;
+    right: 175px;
+    top: 83%;
+    background: #007cfc;
+    border: 2px solid #007cfc;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    height: 60px;
+    min-width: 60px;
+    padding: 4px 3px 0 3px;
+    text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+    footer {
+        height: 30px;
+    }
+
+    footer > p {
+        font-size: 8px;
+    }
+
+    #text {
+        width: 70%;
+        right: 80px;
+    }
+
+    .send-button {
+        right: 4px;
+    }
+
+    .message-scroll {
+        top: 110px;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 351px) {
+    .send-button {
+        right: 5px;
+    }
+
+    #text {
+        right: 70px;
+    }
+
+    footer {
+        height: 45px;
+    }
+
+    footer > p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 840px) and (min-width: 481px) {
+    .send-button {
+        right: 65px;
+    }
+
+    #text {
+        right: 130px;
+    }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
