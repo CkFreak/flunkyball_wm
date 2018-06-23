@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:http://www.icalmaker.com
+BEGIN:VEVENT
+UID:http://www.icalmaker.com/event/f4400ad5-a021-44f7-9ad9-25bb2518e255
+DTSTAMP:20180623T160609Z
+DTSTART:20180629T160000Z
+DTEND:20180630T080000Z
+SUMMARY:Semesterparty Christophorus Haus
+LOCATION:Kalckreuthweg 74, 22607 Hamburg
+DESCRIPTION:Flunkyball-WM!
+Ab 16 Uhr startet unsere Hauseigene Flunkyball-WM. Für Bier, Bowle und Shots ist gegen einen Unkostenbeitrag gesorgt!
+Wir freuen uns auf Euch!
+END:VEVENT
+END:VCALENDAR
