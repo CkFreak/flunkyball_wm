@@ -77,6 +77,11 @@ h1 {
     footer > p {
         font-size: 12px;
     }
+
+    #img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -86,6 +91,11 @@ h1 {
 
     footer > p {
         font-size: 8px;
+    }
+
+    #img {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -100,3 +110,5 @@ h1 {
 #disclaimer {
     font-size: 10px;
 }
+
+
