@@ -97,6 +97,10 @@ h1 {
         width: 200px;
         height: 200px;
     }
+
+    .container-fluid {
+        margin: 100px auto;
+    }
 }
 
 .date {
