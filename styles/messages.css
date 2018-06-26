@@ -168,6 +168,21 @@ footer > p {
     }
 }
 
+@media screen and (max-height: 350px) {
+    .message-scroll {
+        display: none;
+        height: 0;
+    }
+    .send-button {
+        top: 155px;
+        right: 8px;
+    }
+
+    #text {
+       top: 170px;
+    }
+}
+
 input:focus,
 select:focus,
 textarea:focus,
