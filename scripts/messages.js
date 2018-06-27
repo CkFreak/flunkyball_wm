@@ -11,6 +11,12 @@ window.onload = () => {
 
     db.ref("/messages").on("value", showMessages);
 
+    document.getElementById("text").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            sendMessage();
+        }
+    });
+
     const sendButton = document.getElementById("send");
 
     sendButton.addEventListener("click", sendMessage);
@@ -67,11 +73,10 @@ const showMessages = (data) => {
 };
 
 
-const sendMessage = (e) => {
+const sendMessage = () => {
     const textBox = document.getElementById("text");
     if (textBox.value.length !== 0) {
         const key = firebase.database().ref().child("messages").push().key;
-        console.log(key);
         const updates = {};
         updates["/messages/" + key] = {
             content: textBox.value,
